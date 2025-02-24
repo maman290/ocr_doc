@@ -9,6 +9,10 @@ import spacy
 
 app = Flask(__name__)
 
+@app.route('/test', methods=['GET'])
+def test_api():
+    return jsonify({'message': 'API is accessible!'})
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Inisialisasi model bahasa Inggris
@@ -79,7 +83,7 @@ def extract_pdf():
     pdf_file = request.files['file']
     text = extract_text_from_pdf(pdf_file)
 
-    print(text)
+    # print(text)
     
     nama_bpo = filter_names_by_position(text, 'Business Process Owner')
     nama_it_dev = filter_names_by_position(text, 'Developer')
@@ -98,10 +102,12 @@ def extract_pdf():
             'document_name': document_name,
             'date': datetime.now().strftime('%Y-%m-%d'),
             'releaser': all_names,
+            'status': 'Success'
         }
     else:
         data = {
-            'text' : text
+            'text' : text,
+            'status': 'File tidak sesuai template.'
         }
 
     
@@ -109,4 +115,4 @@ def extract_pdf():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)

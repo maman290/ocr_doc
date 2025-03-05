@@ -1,0 +1,35 @@
+{
+    "label": [
+      {
+        "id": 1,
+        "name": "label_dokumen_name",
+        "items": ["Document name"]
+      },
+      {
+        "id": 2,
+        "name": "label_author",
+        "items": ["Author"]
+      },
+      {
+        "id": 3,
+        "name": "label_pant",
+        "items": ["PC / Plant"]
+      },
+      {
+        "id": 4,
+        "name": "label_cost_center",
+        "items": ["Cost Center"]
+      },
+      {
+        "id": 5,
+        "name": "label_dokumen_subject",
+        "items": ["PC / Plant"]
+      },
+      {
+        "id": 5,
+        "name": "label_date",
+        "items": ["Date"]
+      }
+    ]
+  }
+  

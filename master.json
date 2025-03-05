@@ -1,0 +1,58 @@
+{
+  "label": [
+    {
+      "id": 1,
+      "name": "label_dokumen_name",
+      "items": [
+        "Document name",
+        "Nama Dokumen"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "label_author",
+      "items": [
+        "Author"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "label_plant",
+      "items": [
+        "PC / Plant"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "label_cost_center",
+      "items": [
+        "Cost Center"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "label_dokumen_subject",
+      "items": [
+        "PC / Plant"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "label_sign",
+      "items_start": ["Sign"],
+      "items_end": [
+        "Body Email Text"
+      ]
+    },
+    {
+        "id": 7,
+        "name": "label_email",
+        "items_start": [
+        "Body Email Text","As Is"
+        ],
+        "items_end": [
+            "Nonexistent","Scope"
+        ]
+      }
+  ]
+}
